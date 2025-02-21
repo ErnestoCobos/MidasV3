@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "MidasScalpingV3"
+version = "0.1.0"
+description = "Trading application with Textual TUI"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+textual = "^0.52.1"
+pytest = "^7.4.0"
+pytest-watch = "^4.2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

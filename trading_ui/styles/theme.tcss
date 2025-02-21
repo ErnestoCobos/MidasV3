@@ -1,0 +1,413 @@
+Screen {
+    background: #121826;
+    color: #e1e7ef;
+}
+
+#header {
+    height: 3;
+    background: #1a2332;
+    border-bottom: solid #2a3343;
+    padding: 0 1;
+    dock: top;
+}
+
+#footer {
+    height: 3;
+    background: #1a2332;
+    border-top: solid #2a3343;
+    padding: 0 1;
+    dock: bottom;
+}
+
+#main-container {
+    layout: vertical;
+    padding: 1;
+    height: 100%;
+    background: #121826;
+}
+
+#stats-bar {
+    height: 8;
+    background: #1a2332;
+    border: solid #2a3343;
+    padding: 0;
+}
+
+#stats-bar-content {
+    width: 100%;
+    height: 100%;
+    layout: horizontal;
+    background: #162032;
+    padding: 0 2;
+    align: center middle;
+}
+
+#stats-bar-content > .stats-left {
+    width: 1fr;
+    height: 6;
+    padding: 0;
+    align: left middle;
+    background: transparent;
+    layout: horizontal;
+    margin: 0;
+}
+
+#stats-bar-content > .stats-right {
+    width: 1fr;
+    height: 6;
+    padding: 0;
+    align: right middle;
+    background: transparent;
+    layout: horizontal;
+    margin: 0;
+}
+
+#stats-bar-content .price-display {
+    width: 16;
+    height: 4;
+    background: transparent;
+    border: none;
+    align: center middle;
+    margin: 0 1;
+    padding: 0;
+    layout: vertical;
+}
+
+#stats-bar-content .price-label {
+    width: 100%;
+    height: 2;
+    margin: 0;
+    color: #8b95a1;
+    text-align: center;
+    text-style: dim;
+}
+
+#stats-bar-content .price-value {
+    width: 100%;
+    height: 3;
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+    text-style: bold;
+}
+
+
+.stats-container {
+    width: 100%;
+    height: 100%;
+    layout: horizontal;
+    align: center middle;
+    background: #1e2738;
+}
+
+.stats-grid {
+    width: 100%;
+    height: 100%;
+    layout: grid;
+    grid-size: 2;
+    grid-columns: 1fr 1fr;
+    grid-gutter: 1;
+    align: center middle;
+}
+
+.stats-row {
+    width: 100%;
+    height: 100%;
+    layout: horizontal;
+    align: center middle;
+    padding: 0 1;
+    background: #1e2738;
+    border: solid #2a3343;
+}
+
+.stats-item {
+    height: 100%;
+    width: 1fr;
+    margin: 0 1;
+}
+
+.price-display {
+    background: #1e2738;
+    border: solid #2a3343;
+    margin: 0 1;
+    padding: 1;
+    width: 20;
+    height: 4;
+    layout: vertical;
+    align: center middle;
+}
+
+.price-label {
+    width: 100%;
+    color: #8b95a1;
+    text-align: center;
+    margin: 0;
+    text-style: dim;
+}
+
+.price-value {
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    text-style: bold;
+}
+
+.price-up {
+    color: #4caf50;
+}
+
+.price-down {
+    color: #f44336;
+}
+
+.balance-total {
+    height: 8;
+    background: #162032;
+    border-bottom: double #2a3343;
+    margin: 0 1 1 1;
+}
+
+.balance-total .label {
+    color: #a0aec0;
+    text-style: bold;
+}
+
+.balance-total .value {
+    text-style: bold;
+    color: #ffffff;
+}
+
+.operations {
+    height: 4;
+    background: #1c2738;
+    margin: 1 1 0 1;
+}
+
+.operations .value {
+    color: #8b95a1;
+}
+
+#content-container {
+    layout: grid;
+    grid-size: 2 1;
+    grid-columns: 3fr 1fr;
+    height: 100%;
+}
+
+#main-content {
+    background: #1a2332;
+    border: solid #2a3343;
+    padding: 1;
+    margin-right: 1;
+    height: 100%;
+}
+
+.chart {
+    height: 60%;
+    background: #1e2738;
+    border: solid #2a3343;
+    margin: 1;
+    padding: 2;
+}
+
+.chart-header {
+    height: auto;
+    align: left middle;
+    padding: 1;
+}
+
+.tabs-container {
+    height: 40%;
+    margin: 1;
+}
+
+TabbedContent {
+    height: 100%;
+    background: #1e2738;
+    border: solid #2a3343;
+}
+
+.tab-content {
+    height: 100%;
+    padding: 1;
+}
+
+Tabs {
+    dock: top;
+    height: 3;
+    background: #1a2332;
+    border-bottom: solid #2a3343;
+}
+
+Tab {
+    padding: 1 2;
+    color: #8b95a1;
+    text-align: center;
+    width: 20;
+}
+
+Tab:hover {
+    color: #e1e7ef;
+    background: #2a3343;
+}
+
+Tab.-active {
+    color: #e1e7ef;
+    background: #2a3343;
+    border-bottom: solid #4caf50;
+    text-style: bold;
+}
+
+DataTable {
+    height: 100%;
+    border: solid #2a3343;
+}
+
+DataTable > .header {
+    background: #1a2332;
+    color: #8b95a1;
+}
+
+DataTable > .header > .cell {
+    padding: 1 2;
+}
+
+DataTable > .row {
+    background: #1e2738;
+}
+
+DataTable > .row > .cell {
+    padding: 0 2;
+    color: #e1e7ef;
+}
+
+Log {
+    background: #1e2738;
+    color: #e1e7ef;
+    height: 100%;
+    border: solid #2a3343;
+    padding: 1;
+}
+
+#side-panel {
+    background: #1a2332;
+    border: solid #2a3343;
+    padding: 1;
+    height: 100%;
+}
+
+.controls {
+    background: #1e2738;
+    border: solid #2a3343;
+    margin: 1;
+    padding: 2;
+    height: 100%;
+}
+
+.buttons-grid {
+    grid-size: 2;
+    grid-columns: 1fr 1fr;
+    padding: 1;
+    align: center middle;
+}
+
+.order-type-grid {
+    grid-size: 2;
+    grid-columns: 1fr 1fr;
+    padding: 1;
+    align: center middle;
+    margin-bottom: 1;
+}
+
+.input-grid {
+    grid-size: 2;
+    grid-columns: 1fr 1fr;
+    padding: 1;
+    align: center middle;
+    margin: 1 0;
+}
+
+#market-order {
+    background: #2d803e;
+}
+
+#market-order:hover {
+    background: #3d904e;
+}
+
+#limit-order {
+    background: #2a3343;
+}
+
+#limit-order:hover {
+    background: #3a4353;
+}
+
+Horizontal {
+    height: auto;
+    align: center middle;
+    padding: 1;
+}
+
+Vertical {
+    height: auto;
+    align: center middle;
+    padding: 1;
+}
+
+Button {
+    width: 100%;
+    margin: 1;
+    padding: 1;
+    background: #2a3343;
+    border: none;
+}
+
+Button:hover {
+    background: #3a4353;
+}
+
+Button.primary {
+    background: #2d803e;
+}
+
+Button.primary:hover {
+    background: #3d904e;
+}
+
+Button.error {
+    background: #803e3e;
+}
+
+Button.error:hover {
+    background: #904e4e;
+}
+
+.price-up {
+    color: #4caf50;
+    text-style: bold;
+}
+
+.price-down {
+    color: #f44336;
+    text-style: bold;
+}
+
+.label {
+    color: #8b95a1;
+    margin-bottom: 1;
+    text-align: center;
+}
+
+.value {
+    color: #e1e7ef;
+    margin-bottom: 2;
+    text-align: center;
+    text-style: bold;
+}
+
+PriceDisplay {
+    width: 100%;
+    margin: 1;
+    padding: 1;
+}
