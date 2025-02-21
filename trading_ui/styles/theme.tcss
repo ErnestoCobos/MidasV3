@@ -4,11 +4,13 @@ Screen {
 }
 
 #header {
-    height: 3;
+    height: 4;
     background: #1a2332;
     border-bottom: solid #2a3343;
-    padding: 0 1;
+    padding: 1 1;
+    margin: 0 1 1 1;
     dock: top;
+    align: center middle;
 }
 
 #footer {

@@ -17,8 +17,9 @@ class PriceDisplay(Static):
         self.classes = classes
 
     def compose(self) -> ComposeResult:
-        yield Static(self.label_text, classes="price-label")
-        yield Static(self.value_text, classes=f"price-value {self.trend}")
+        with Container():
+            yield Static(self.label_text, classes="price-label")
+            yield Static(self.value_text, classes=f"price-value {self.trend}")
 
 # -------------------------
 # Aquí ajustamos StatsBar
@@ -106,7 +107,7 @@ class ScalpingApp(App):
     CSS_PATH = "styles/theme.tcss"  # O bien puedes asignar TRADING_THEME directamente
 
     def compose(self) -> ComposeResult:
-        yield Header(id="header", show_clock=True)
+        yield Header(id="header", show_clock=True, icon="💸")
         with Container(id="main-container"):
             yield StatsBar(id="stats-bar")
             with Container(id="content-container"):
