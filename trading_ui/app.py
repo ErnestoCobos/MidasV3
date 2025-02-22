@@ -29,18 +29,20 @@ class StatsBar(Static):
     def compose(self) -> ComposeResult:
         # Contenedor horizontal principal, ocupa todo el ancho
         with Horizontal(id="stats-bar-content"):
-            # Contenedor izquierdo: rendimiento diario y semanal
-            with Horizontal(classes="stats-left"):
-                yield PriceDisplay("Rend. Diario", "+$123.00", "price-up")
-                yield PriceDisplay("Rend. Semanal", "+$456.00", "price-up")
-                # Si quieres añadir Rend. Mensual, lo agregas aquí:
-                # yield PriceDisplay("Rend. Mensual", "+$789.00", "price-up")
-
             # Contenedor derecho: BTC, ETH, y lo que quieras
             with Horizontal(classes="stats-right"):
                 yield PriceDisplay("BTC", "$45,123", "price-up")
+            with Horizontal(classes="stats-right"):
                 yield PriceDisplay("ETH", "$3,123", "price-up")
+            with Horizontal(classes="stats-right"):
                 yield PriceDisplay("24h", "$1,234", "price-up")
+            # Contenedor izquierdo: rendimiento diario y semanal
+            with Horizontal(classes="stats-left"):
+                yield PriceDisplay("Rend. Diario", "+$123.00", "price-up")
+            with Horizontal(classes="stats-left"):
+                yield PriceDisplay("Rend. Semanal", "+$456.00", "price-up")
+                # Si quieres añadir Rend. Mensual, lo agregas aquí:
+                # yield PriceDisplay("Rend. Mensual", "+$789.00", "price-up")
 
 # -------------------------
 # Resto de tu código

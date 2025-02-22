@@ -29,7 +29,7 @@ Screen {
 }
 
 #stats-bar {
-    height: 8;
+    height: 9;
     background: #1a2332;
     border: solid #2a3343;
     padding: 0;
@@ -40,28 +40,30 @@ Screen {
     height: 100%;
     layout: horizontal;
     background: #162032;
-    padding: 0 2;
+    padding: 0 1;
     align: center middle;
 }
 
 #stats-bar-content > .stats-left {
     width: 1fr;
-    height: 6;
+    height: 7;
     padding: 0;
     align: left middle;
     background: transparent;
     layout: horizontal;
     margin: 0;
+    border: solid #2a3343;
 }
 
 #stats-bar-content > .stats-right {
     width: 1fr;
-    height: 6;
+    height: 7;
     padding: 0;
     align: right middle;
     background: transparent;
     layout: horizontal;
     margin: 0;
+    border: solid #2a3343;
 }
 
 #stats-bar-content .price-display {
